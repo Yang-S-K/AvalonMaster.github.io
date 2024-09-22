@@ -235,6 +235,7 @@ const recommendedCombinations = {
             .replace(/莫德雷德|莫甘娜|奧伯倫|刺客|邪惡/g, '<span class="highlight-red">$&</span>')
             .replace(/正義/g, '<span class="highlight-blue">$&</span>')
             .replace(/蘭斯洛特/g, '<span class="highlight-purple">$&</span>');
+
         guideText.innerHTML = guideContent;
     };
 
