@@ -128,3 +128,8 @@ footer button:hover {
     font-size: 14px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* 添加陰影效果 */
 }
+#author-link {
+    color: #ffcc00;           /* 设置超链接的颜色与其他字体一致 */
+    text-decoration: none;    /* 移除下划线 */
+    font-weight: bold;        /* 加粗 */
+}
