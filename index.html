@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>阿瓦隆主持人</title>
+    <link rel="stylesheet" href="styles.css">
+
+ <!-- 設定網頁icon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- 如果你使用其他格式，例如 PNG 或 SVG -->
+    <!-- <link rel="icon" href="path/to/favicon.png" type="image/png"> -->
+    <!-- <link rel="icon" href="path/to/favicon.svg" type="image/svg+xml"> -->
+</head>
+<body>
+    <header>
+        <h1>角色選擇</h1>
+    </header>
+    
+<section id="character-selection">
+    <h2>點選使用的角色</h2>
+    
+    <!-- 正義方角色 -->
+    <div id="justice-characters">
+        <h3>正義方角色</h3>
+        <div class="character" data-name="梅林">梅林</div>
+        <div class="character" data-name="派西維爾">派西維爾</div>
+        <div class="character" data-name="正義蘭斯洛特">蘭斯洛特 (正義)</div>
+    </div>
+    
+    <!-- 邪惡方角色 -->
+    <div id="evil-characters">
+        <h3>邪惡方角色</h3>
+        <div class="character evil" data-name="刺客">刺客</div>
+        <div class="character evil" data-name="莫甘娜">莫甘娜</div>
+        <div class="character evil" data-name="莫德雷德">莫德雷德</div>
+        <div class="character evil" data-name="奧伯倫">奧伯倫</div>
+        <div class="character evil" data-name="邪惡蘭斯洛特">蘭斯洛特 (邪惡)</div>
+    </div>
+
+    <!-- 蘭斯洛特變體選擇 -->
+    <div id="lancelot-variant" class="hidden">
+        <h3>選擇蘭斯洛特變體</h3>
+        <div class="lancelot-option" data-value="12">變體 1/2</div>
+        <div class="lancelot-option" data-value="3">變體 3</div>
+    </div>
+
+    <button id="confirm-selection">確定</button>
+
+    <!-- 添加推薦角色按鈕 (移到最底部) -->
+    <div id="recommended-characters">
+       <h3>推薦角色組合</h3>
+        <div class="recommendation-buttons">
+            <div class="recommend-item">
+                <button class="recommend-button" data-players="5">5人</button>
+                <div class="faction-info">
+                    <p>正義方：3</p>
+                    <p>邪惡方：2</p>
+                </div>
+            </div>
+            
+            <div class="recommend-item">
+                <button class="recommend-button" data-players="6">6人</button>
+                <div class="faction-info">
+                    <p>正義方：4</p>
+                    <p>邪惡方：2</p>
+                </div>
+            </div>
+            
+            <div class="recommend-item">
+                <button class="recommend-button" data-players="7">7人</button>
+                <div class="faction-info">
+                    <p>正義方：4</p>
+                    <p>邪惡方：3</p>
+                </div>
+            </div>
+            
+            <div class="recommend-item">
+                <button class="recommend-button" data-players="8">8人</button>
+                <div class="faction-info">
+                    <p>正義方：5</p>
+                    <p>邪惡方：3</p>
+                </div>
+            </div>
+            
+            <div class="recommend-item">
+                <button class="recommend-button" data-players="9">9人</button>
+                <div class="faction-info">
+                    <p>正義方：6</p>
+                    <p>邪惡方：3</p>
+                </div>
+            </div>
+            
+            <div class="recommend-item">
+                <button class="recommend-button" data-players="10">10人</button>
+                <div class="faction-info">
+                    <p>正義方：6</p>
+                    <p>邪惡方：4</p>
+                </div>
+            </div>
+
+        </div>
+<div id="recommendation-info" class="hidden"></div> <!-- 用于显示忠臣和爪牙提示信息 -->
+    <button id="view-skills-button">查詢角色技能</button>
+</div>
+
+</section>
+
+
+
+    
+    <section id="game-guide" class="hidden">
+        <h2>遊戲指引</h2>
+        <div id="guide-text"></div>
+        
+        <!-- 语音控制区 -->
+
+<div id="voice-controls">
+    <!-- 第一行：語速調整 -->
+    <div id="voice-speed-control">
+        <label for="voice-rate">語速：</label>
+        <input type="range" id="voice-rate" min="0.5" max="2" step="0.1" value="1">
+        <span id="rate-display">1.0</span>
+    </div>
+
+    <!-- 第二行：播放/暫停和停止 -->
+    <div id="voice-playback-control">
+        <button id="play-pause-voice">播放</button>
+        <button id="stop-voice">停止</button>
+    </div>
+
+    <!-- 第三行：返回角色選擇 -->
+    <div id="voice-back-control">
+        <button id="back-to-selection">返回角色選擇</button>
+    </div>
+</div>
+
+
+
+
+
+    </section>
+
+
+        <!-- 作者資訊 -->
+    <div id="author-info">
+        Made by:YK
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
