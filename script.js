@@ -232,9 +232,9 @@ const recommendedCombinations = {
             .replace(/梅林/g, '<span class="highlight-blue">梅林</span>')
             .replace(/派西維爾/g, '<span class="highlight-blue">派西維爾</span>')
             .replace(/壞人/g, '<span class="highlight-red">壞人</span>')
-            .replace(/莫德雷德|莫甘娜|奧伯倫|刺客/g, '<span class="highlight-red">$&</span>')
-            .replace(/正義蘭斯洛特|邪惡蘭斯洛特/g, '<span class="highlight-purple">$&</span>');
-
+            .replace(/莫德雷德|莫甘娜|奧伯倫|刺客|邪惡/g, '<span class="highlight-red">$&</span>')
+            .replace(/正義/g, '<span class="highlight-blue">$&</span>')
+            .replace(/蘭斯洛特/g, '<span class="highlight-purple">$&</span>');
         guideText.innerHTML = guideContent;
     };
 
