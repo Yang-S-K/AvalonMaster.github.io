@@ -287,7 +287,11 @@ h1 {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* 添加陰影 */
     z-index: 1000;           /* 确保作者信息位于顶层 */
 }
-
+#author-link {
+    color: #ffcc00;           /* 设置超链接的颜色与其他字体一致 */
+    text-decoration: none;    /* 移除下划线 */
+    font-weight: bold;        /* 加粗 */
+}
 /* 查詢角色技能按鈕容器 */
 #skills-button-container {
     text-align: center;    /* 按钮居中显示 */
