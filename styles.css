@@ -67,10 +67,10 @@ h1 {
     display: none;
 }
 
-/* 统一设置指引文本的字体大小 */
+/* 統一設置指引文本的字體大小 */
 #guide-text {
-    font-size: 16px; /* 您可以根据需要调整字体大小 */
-    line-height: 1.5; /* 设置行高以确保可读性 */
+    font-size: 16px; /* 您可以根據需要調整字體大小 */
+    line-height: 1.5; /* 設置行高以確保可讀性 */
 }
 
 
@@ -86,19 +86,19 @@ h1 {
 }
 /* 蘭斯洛特變體選擇區的樣式 */
 #lancelot-variant {
-    display: none; /* 默认隐藏 */
-    flex-direction: column; /* 让选项垂直排列 */
-    align-items: center; /* 居中对齐 */
+    display: none; /* 默認隱藏 */
+    flex-direction: column; /* 讓選項垂直排列 */
+    align-items: center; /* 居中對齊 */
     margin-top: 20px;
     gap: 10px;
 }
 
 .lancelot-option {
-    width: 200px; /* 设定每个选项的宽度，可以根据需要调整 */
-    padding: 15px 0; /* 上下填充以确保垂直居中 */
-    background-color: #f8f9fa; /* 未选中时的背景颜色 */
-    color: #000000; /* 未选中时的文字颜色 */
-    border: 2px solid #ccc; /* 未选中时的边框颜色 */
+    width: 200px; /* 設定每個選項的寬度，可以根據需要調整 */
+    padding: 15px 0; /* 上下填充以確保垂直居中 */
+    background-color: #f8f9fa; /* 未選中時的背景顏色 */
+    color: #000000; /* 未選中時的文字顏色 */
+    border: 2px solid #ccc; /* 未選中時的邊框顏色 */
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -116,9 +116,9 @@ h1 {
 }
 
 .lancelot-option.selected {
-    background-color: #007BFF; /* 选中时的背景颜色 */
-    color: #ffffff;            /* 选中时的文字颜色 */
-    border-color: #0056b3;     /* 选中时的边框颜色 */
+    background-color: #007BFF; /* 選中時的背景顏色 */
+    color: #ffffff;            /* 選中時的文字顏色 */
+    border-color: #0056b3;     /* 選中時的邊框顏色 */
 }
 
 
@@ -160,45 +160,45 @@ h1 {
     display: flex;
     flex-direction: column; /* 垂直排列子元素 */
     align-items: center;    /* 水平居中 */
-    gap: 15px;              /* 设置各行之间的间距 */
+    gap: 15px;              /* 設置各行之間的間距 */
     margin-top: 20px;
 }
 
 #voice-speed-control {
     display: flex;
     align-items: center;    /* 垂直居中 */
-    gap: 10px;              /* 设置语速调整组件的间距 */
+    gap: 10px;              /* 設置語速調整組件的間距 */
 }
 
 #voice-playback-control {
     display: flex;
-    gap: 10px;              /* 设置播放/暂停和停止按钮之间的间距 */
+    gap: 10px;              /* 設置播放/暫停和停止按鈕之間的間距 */
 }
 
 #voice-back-control {
-    margin-top: 10px; /* 添加额外的间距 */
+    margin-top: 10px; /* 添加額外的間距 */
 }
 
 #voice-playback-control button,
 #voice-back-control button {
-    background-color: #007BFF; /* 设置按钮背景色 */
-    color: #FFFFFF;            /* 设置按钮文字颜色 */
-    padding: 10px 20px;        /* 调整按钮的内边距 */
-    border: none;              /* 去掉边框 */
-    border-radius: 5px;        /* 圆角边框 */
-    font-size: 16px;           /* 调整字体大小 */
-    cursor: pointer;           /* 鼠标悬停时显示手型光标 */
-    transition: background-color 0.3s ease; /* 鼠标悬停的过渡效果 */
+    background-color: #007BFF; /* 設置按鈕背景色 */
+    color: #FFFFFF;            /* 設置按鈕文字顏色 */
+    padding: 10px 20px;        /* 調整按鈕的內邊距 */
+    border: none;              /* 去掉邊框 */
+    border-radius: 5px;        /* 圓角邊框 */
+    font-size: 16px;           /* 調整字體大小 */
+    cursor: pointer;           /* 鼠標懸停時顯示手型光標 */
+    transition: background-color 0.3s ease; /* 鼠標懸停的過渡效果 */
 }
 
 #voice-playback-control button:hover,
 #voice-back-control button:hover {
-    background-color: #0056b3; /* 鼠标悬停时的背景颜色 */
+    background-color: #0056b3; /* 鼠標懸停時的背景顏色 */
 }
 
 #voice-playback-control button:active,
 #voice-back-control button:active {
-    background-color: #003f7f; /* 鼠标按下时的背景颜色 */
+    background-color: #003f7f; /* 鼠標按下時的背景顏色 */
 }
 
 #recommended-characters {
@@ -251,8 +251,8 @@ h1 {
     padding: 5px;
     border-radius: 5px;
     border: 1px solid #444;
-    color: #ffcc00; /* 黄色字体与背景形成对比 */
-    width: 100%; /* 确保信息块与按钮等宽 */
+    color: #ffcc00; /* 黃色字體與背景形成對比 */
+    width: 100%; /* 確保信息塊與按鈕等寬 */
     text-align: center;
 }
 
@@ -266,9 +266,9 @@ h1 {
 }
 
 .recommend-button.selected {
-    background-color: #28a745; /* 选中时的背景色 */
-    color: #fff; /* 选中时的文字颜色 */
-    transform: scale(1.1); /* 选中时的放大效果 */
+    background-color: #28a745; /* 選中時的背景色 */
+    color: #fff; /* 選中時的文字顏色 */
+    transform: scale(1.1); /* 選中時的放大效果 */
 }
 #recommendation-info {
     margin-top: 10px;
@@ -285,41 +285,41 @@ h1 {
     border-radius: 5px;      /* 圓角 */
     font-size: 14px;         /* 字體大小 */
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* 添加陰影 */
-    z-index: 1000;           /* 确保作者信息位于顶层 */
+    z-index: 1000;           /* 確保作者信息位於頂層 */
 }
 #author-link {
-    color: #ffcc00;           /* 设置超链接的颜色与其他字体一致 */
-    text-decoration: none;    /* 移除下划线 */
+    color: #ffcc00;           /* 設置超鏈接的顏色與其他字體一致 */
+    text-decoration: none;    /* 移除下劃線 */
     font-weight: bold;        /* 加粗 */
 }
 /* 查詢角色技能按鈕容器 */
 #skills-button-container {
-    text-align: center;    /* 按钮居中显示 */
-    margin: 40px 0 20px;   /* 添加上方较大的边距以拉开距离，底部较小的边距 */
+    text-align: center;    /* 按鈕居中顯示 */
+    margin: 40px 0 20px;   /* 添加上方較大的邊距以拉開距離，底部較小的邊距 */
 }
 
 /* 美化查詢角色技能按鈕 */
 #view-skills-button {
-    background: linear-gradient(135deg, #6a89cc, #4a69bd); /* 渐变背景 */
-    color: #FFFFFF;             /* 文字颜色 */
-    padding: 12px 25px;         /* 调整内边距 */
-    border: none;               /* 去掉边框 */
-    border-radius: 30px;        /* 圆角 */
-    cursor: pointer;            /* 指针样式 */
-    font-size: 16px;            /* 字体大小 */
-    font-weight: bold;          /* 加粗字体 */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* 添加阴影效果 */
-    transition: all 0.3s ease;  /* 过渡效果 */
+    background: linear-gradient(135deg, #6a89cc, #4a69bd); /* 漸變背景 */
+    color: #FFFFFF;             /* 文字顏色 */
+    padding: 12px 25px;         /* 調整內邊距 */
+    border: none;               /* 去掉邊框 */
+    border-radius: 30px;        /* 圓角 */
+    cursor: pointer;            /* 指針樣式 */
+    font-size: 16px;            /* 字體大小 */
+    font-weight: bold;          /* 加粗字體 */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* 添加陰影效果 */
+    transition: all 0.3s ease;  /* 過渡效果 */
 }
 
 #view-skills-button:hover {
-    background: linear-gradient(135deg, #4a69bd, #1e3799); /* 鼠标悬停时的背景变化 */
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* 悬停时阴影变大 */
-    transform: translateY(-3px); /* 悬停时向上移动 */
+    background: linear-gradient(135deg, #4a69bd, #1e3799); /* 鼠標懸停時的背景變化 */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* 懸停時陰影變大 */
+    transform: translateY(-3px); /* 懸停時向上移動 */
 }
 
 #view-skills-button:active {
-    background: linear-gradient(135deg, #3b5998, #192a56); /* 点击时的背景变化 */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* 点击时阴影缩小 */
-    transform: translateY(0); /* 点击时恢复原位 */
+    background: linear-gradient(135deg, #3b5998, #192a56); /* 點擊時的背景變化 */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* 點擊時陰影縮小 */
+    transform: translateY(0); /* 點擊時恢覆原位 */
 }
