@@ -7,20 +7,20 @@ document.addEventListener("DOMContentLoaded", () => {
     const playPauseButton = document.getElementById('play-pause-voice');
     const stopVoiceButton = document.getElementById('stop-voice');
     const backButton = document.getElementById('back-to-selection');
-    const lancelotVariantSection = document.getElementById('lancelot-variant'); // 兰斯洛特变体选择的容器
-    const lancelotOptions = document.querySelectorAll('.lancelot-option'); // 兰斯洛特变体选项
+    const lancelotVariantSection = document.getElementById('lancelot-variant'); // 蘭斯洛特變體選擇的容器
+    const lancelotOptions = document.querySelectorAll('.lancelot-option'); // 蘭斯洛特變體選項
     const voiceRateSlider = document.getElementById('voice-rate'); 
     const rateDisplay = document.getElementById('rate-display');
 
     let selectedCharacters = [];
-    let lancelotVariant = "12"; // 预设为变体1/2
+    let lancelotVariant = "12"; // 預設為變體1/2
     let utterance; 
     let isPaused = false;
     let isPlaying = false; 
     let voiceRate = 1.0; 
 const viewSkillsButton = document.getElementById("view-skills-button");
 
-    // 点击按钮时跳转到新的角色技能页面
+    // 點擊按鈕時跳轉到新的角色技能頁面
     viewSkillsButton.addEventListener("click", () => {
         window.location.href = "skills.html"; // 跳轉到skills.html
     });
@@ -56,7 +56,7 @@ const recommendedCombinations = {
         10: 1
     };
 
-    // 处理推荐角色按钮的点击事件
+    // 處理推薦角色按鈕的點擊事件
     const recommendButtons = document.querySelectorAll('.recommend-button');
     const recommendationInfo = document.getElementById('recommendation-info');
 
@@ -64,14 +64,14 @@ const recommendedCombinations = {
         button.addEventListener('click', () => {
             const playerCount = parseInt(button.dataset.players);
 
-            // 获取推荐的角色组合
+            // 獲取推薦的角色組合
             const recommendedCharacters = recommendedCombinations[playerCount];
 
-            // 清除所有已选择的角色
+            // 清除所有已選擇的角色
             characters.forEach(character => character.classList.remove('selected'));
             selectedCharacters = [];
 
-            // 遍历推荐角色并将其选中
+            // 遍歷推薦角色並將其選中
             recommendedCharacters.forEach(name => {
                 const characterElement = document.querySelector(`.character[data-name="${name}"]`);
                 if (characterElement) {
@@ -80,7 +80,7 @@ const recommendedCombinations = {
                 }
             });
 
-            // 如果包含兰斯洛特角色，显示变体选择
+            // 如果包含蘭斯洛特角色，顯示變體選擇
             if (recommendedCharacters.includes("正義蘭斯洛特") || recommendedCharacters.includes("邪惡蘭斯洛特")) {
                 goodLancelot.classList.add('selected');
                 evilLancelot.classList.add('selected');
@@ -89,11 +89,11 @@ const recommendedCombinations = {
                 lancelotVariantSection.style.display = 'none';
             }
 
-            // 处理按钮样式：移除其他按钮的选中状态，并设置当前按钮为选中状态
+            // 處理按鈕樣式：移除其他按鈕的選中狀態，並設置當前按鈕為選中狀態
             recommendButtons.forEach(btn => btn.classList.remove('selected'));
             button.classList.add('selected');
 
-            // 显示忠臣、爪牙和湖中女神的提示信息
+            // 顯示忠臣、爪牙和湖中女神的提示信息
             const loyalServants = loyalServantCounts[playerCount];
             const minions = minionCounts[playerCount];
             let infoText = `忠臣: ${loyalServants} 人${minions > 0 ? `，爪牙: ${minions} 人` : ''}`;
@@ -106,30 +106,30 @@ const recommendedCombinations = {
         });
     });
 
-    // 监听每个角色的点击事件，当手动选择角色时，取消推荐按钮的选中状态
+    // 監聽每個角色的點擊事件，當手動選擇角色時，取消推薦按鈕的選中狀態
     characters.forEach(character => {
         character.addEventListener('click', () => {
             recommendButtons.forEach(btn => btn.classList.remove('selected'));
-            recommendationInfo.classList.add('hidden'); // 隐藏忠臣、爪牙和湖中女神提示信息
+            recommendationInfo.classList.add('hidden'); // 隱藏忠臣、爪牙和湖中女神提示信息
         });
     });
 
-    // 预设选择梅林和刺客
+    // 預設選擇梅林和刺客
     merlin.classList.add('selected');
     assassin.classList.add('selected');
     selectedCharacters.push('梅林', '刺客');
 
-    // 处理角色选择
+    // 處理角色選擇
     characters.forEach(character => {
         character.addEventListener('click', () => {
             if (character.dataset.name === '梅林' || character.dataset.name === '刺客') return;
 
             if (character.classList.contains('selected')) {
-                // 取消选择角色
+                // 取消選擇角色
                 character.classList.remove('selected');
                 selectedCharacters = selectedCharacters.filter(name => name !== character.dataset.name);
 
-                // 如果取消的是正义或邪恶兰斯洛特，也需要取消另一个
+                // 如果取消的是正義或邪惡蘭斯洛特，也需要取消另一個
                 if (character.dataset.name === '正義蘭斯洛特' || character.dataset.name === '邪惡蘭斯洛特') {
                     goodLancelot.classList.remove('selected');
                     evilLancelot.classList.remove('selected');
@@ -137,32 +137,32 @@ const recommendedCombinations = {
                     lancelotVariantSection.style.display = 'none';
                 }
             } else {
-                // 选择角色
+                // 選擇角色
                 character.classList.add('selected');
                 selectedCharacters.push(character.dataset.name);
 
-                // 如果选择的是正义或邪恶兰斯洛特，确保两个同时被选中
+                // 如果選擇的是正義或邪惡蘭斯洛特，確保兩個同時被選中
                 if (character.dataset.name === '正義蘭斯洛特' || character.dataset.name === '邪惡蘭斯洛特') {
                     goodLancelot.classList.add('selected');
                     evilLancelot.classList.add('selected');
                     if (!selectedCharacters.includes('正義蘭斯洛特')) selectedCharacters.push('正義蘭斯洛特');
                     if (!selectedCharacters.includes('邪惡蘭斯洛特')) selectedCharacters.push('邪惡蘭斯洛特');
-                    lancelotVariantSection.style.display = 'flex'; // 显示兰斯洛特变体选择
+                    lancelotVariantSection.style.display = 'flex'; // 顯示蘭斯洛特變體選擇
                 }
             }
         });
     });
 
-    // 设置兰斯洛特变体选择的UI
+    // 設置蘭斯洛特變體選擇的UI
     lancelotOptions.forEach(option => {
         option.addEventListener('click', () => {
-            lancelotOptions.forEach(opt => opt.classList.remove('selected')); // 移除其他选项的选中状态
-            option.classList.add('selected'); // 添加当前选项的选中状态
-            lancelotVariant = option.dataset.value; // 更新选中的兰斯洛特变体值
+            lancelotOptions.forEach(opt => opt.classList.remove('selected')); // 移除其他選項的選中狀態
+            option.classList.add('selected'); // 添加當前選項的選中狀態
+            lancelotVariant = option.dataset.value; // 更新選中的蘭斯洛特變體值
         });
     });
 
-    // 初始设置默认选项为变体1/2
+    // 初始設置默認選項為變體1/2
     document.querySelector('.lancelot-option[data-value="12"]').classList.add('selected');
 
 
@@ -240,7 +240,7 @@ const recommendedCombinations = {
     };
 
 
-    // 语音播放/暂停功能
+    // 語音播放/暫停功能
     const togglePlayPause = () => {
         if (isPlaying) {
             window.speechSynthesis.pause();
