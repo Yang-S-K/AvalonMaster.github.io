@@ -1,9 +1,9 @@
-/* 整个页面布局 */
+/* 整個頁面布局 */
 body {
     font-family: Arial, sans-serif;
     padding: 20px;
-    background-color: #1e1e1e; /* 设置暗色背景 */
-    color: #e0e0e0;            /* 设置默认文字颜色 */
+    background-color: #1e1e1e; /* 設置暗色背景 */
+    color: #e0e0e0;            /* 設置默認文字顏色 */
 }
 
 header {
@@ -14,11 +14,11 @@ header {
 
 section {
     margin-bottom: 30px;
-    background-color: #2c2c2c; /* 设置暗色卡片背景 */
+    background-color: #2c2c2c; /* 設置暗色卡片背景 */
     padding: 20px;
-    border: 1px solid #444;    /* 边框颜色变暗 */
+    border: 1px solid #444;    /* 邊框顏色變暗 */
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* 较深的阴影 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* 較深的陰影 */
 }
 
 #skills-info-good, #skills-info-evil, #lancelot-rules, #special-rules {
@@ -29,16 +29,16 @@ section {
 
 h2 {
     text-align: center;
-    color: #ffffff; /* 设置标题为白色 */
+    color: #ffffff; /* 設置標題為白色 */
 }
 
 .character-skill, .special-rule {
     background-color: #3a3a3a; /* 卡片背景色 */
-    border: 1px solid #555;    /* 边框颜色 */
+    border: 1px solid #555;    /* 邊框顏色 */
     border-radius: 8px;
     padding: 10px;
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); /* 深色阴影 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); /* 深色陰影 */
     transition: transform 0.3s ease;
     width: 100%;
     max-width: 250px;
@@ -46,7 +46,7 @@ h2 {
 
 .character-skill:hover, .special-rule:hover {
     transform: translateY(-5px);
-    background-color: #444; /* 鼠标悬停时变亮一点 */
+    background-color: #444; /* 鼠標懸停時變亮一點 */
 }
 
 .character-photo, .special-photo {
@@ -54,22 +54,22 @@ h2 {
     max-height: 150px;
     object-fit: cover;
     border-radius: 4px;
-    border: 1px solid #666; /* 图片边框 */
+    border: 1px solid #666; /* 圖片邊框 */
 }
 
 .skill-description, .rule-description {
     margin-top: 10px;
-    color: #d0d0d0; /* 文字颜色 */
+    color: #d0d0d0; /* 文字顏色 */
 }
 
 h3 {
-    color: #ffcc00; /* 强调的黄色 */
+    color: #ffcc00; /* 強調的黃色 */
 }
 
 .rule-explanation {
     margin: 15px 0;
     padding: 10px;
-    border-left: 4px solid #ffcc00; /* 给规则添加黄色边框 */
+    border-left: 4px solid #ffcc00; /* 給規則添加黃色邊框 */
     background-color: #2c2c2c;
 }
 
@@ -79,7 +79,7 @@ footer {
 }
 
 footer button {
-    background-color: #ffcc00; /* 亮黄色按钮 */
+    background-color: #ffcc00; /* 亮黃色按鈕 */
     color: #1e1e1e;
     padding: 10px 20px;
     border: none;
@@ -90,7 +90,7 @@ footer button {
 }
 
 footer button:hover {
-    background-color: #e6b800; /* 鼠标悬停时按钮变色 */
+    background-color: #e6b800; /* 鼠標懸停時按鈕變色 */
 }
 /* 懸浮控制區域 */
 #floating-controls {
@@ -100,7 +100,7 @@ footer button:hover {
     display: flex;
     align-items: center;
     gap: 10px;
-    z-index: 1000;           /* 确保在页面最前 */
+    z-index: 1000;           /* 確保在頁面最前 */
 }
 
 #back-to-selection {
@@ -121,7 +121,7 @@ footer button:hover {
 
 #author-info {
     background-color: #2c2c2c; /* 暗色背景 */
-    color: #ffcc00;            /* 黄色字体 */
+    color: #ffcc00;            /* 黃色字體 */
     padding: 5px 10px;
     border-radius: 5px;
     border: 1px solid #444;
@@ -129,7 +129,7 @@ footer button:hover {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* 添加陰影效果 */
 }
 #author-link {
-    color: #ffcc00;           /* 设置超链接的颜色与其他字体一致 */
-    text-decoration: none;    /* 移除下划线 */
+    color: #ffcc00;           /* 設置超鏈接的顏色與其他字體一致 */
+    text-decoration: none;    /* 移除下劃線 */
     font-weight: bold;        /* 加粗 */
 }
